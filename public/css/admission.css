@@ -1,0 +1,38 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    border: 1px solid red;
+    width: 80vw;
+}
+.form-grp{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 25px;
+}
+.row{
+    display: flex;
+}
+.inline{
+    flex-direction: row!important;
+    align-items: center;
+}
+.inline input, .inline label{
+    margin-left: 15px;
+}
+th{
+    padding: 30px;
+}
+#interpassing,#interclgname,#intermarks,#bachpassing,#bachclgname,#bachmarks{
+    height: 45px;
+    /* font-size: xx-large; */
+    outline: none;
+    /* border: none; */
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+label{
+    font-weight: bolder;
+}
