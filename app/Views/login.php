@@ -10,7 +10,7 @@
         </div>
     <?php endif; ?>
     <div class="container mt-3" style="display:flex; justify-content:center;">
-        <form class=" p-5 border shadow rounded w-50" action="login-submit" method="POST">
+        <form class=" p-5 border shadow rounded" style="width: 70vw;" action="login-submit" method="POST">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

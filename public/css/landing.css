@@ -1,0 +1,85 @@
+.landing-wrapper-top{
+    position: relative;
+}
+.leftCurv,.rightCurv{
+    position: absolute;
+    top: 0;
+    /* border: 1px solid red;
+    width: fit-content; */
+    width: 25vw;
+    z-index: 1;
+}
+.leftCurv{
+    left: 0;
+}
+.rightCurv{
+    right: 0;
+}
+.mainLogo,.mainSection{
+    position: relative;
+    z-index: 2;
+}
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #9c060b;
+    padding: 30px;
+}
+.mainLogo{
+    margin-left: 50px;
+}
+.mainLogo2{
+    margin-right: 50px;
+}
+.title-text h1{
+    font-weight: bolder;
+    color: #9c060b;
+    /* font-size: larger; */
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.meta1,.meta2,.metaCourse1{
+    display: flex;
+}
+.meta-text{
+    font-size: 30px;
+    text-align: justify;
+    word-spacing: 8px;
+    font-weight: bold;
+}
+.meta2{
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    justify-content: center;
+}
+.courses{
+    position: static;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.container1{
+    z-index: 1;
+    position: relative;
+    margin: 0 50px;
+}
+.meta-foot{
+    border-top: 3px solid #9c060b;
+    padding: 20px;
+}
+.meta-foot-table{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 1150px){
+    .mainLogo{
+        
+    }
+    .mainLogo2{}
+    .meta1,.meta2,.metaCourse1{
+        display: block;
+    }
+}

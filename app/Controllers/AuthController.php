@@ -164,10 +164,6 @@ class AuthController extends BaseController
     // Test function
     public function test()
     {
-        $model = new States();
-        $states = $model->findAll();
-        if($states){
-            return $this->response->setJSON($states);
-        }
+        echo ``;
     }
 }

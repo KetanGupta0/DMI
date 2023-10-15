@@ -7,6 +7,7 @@
     <title>DMI</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/landing.css">
 </head>
 
 <body>
