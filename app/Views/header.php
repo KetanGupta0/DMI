@@ -1,41 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMI</title>
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/landing.css">
-</head>
-
-<body>
-    <div class="nav" style="z-index: 100;">
-        <a href="https://www.dmi.ac.in" class="btn">Home</a>
-        <a href="index1" class="btn hindi">Hindi</a>
-        <a href="index2" class="btn english">English</a>
-        <?php if (session('logged_in')) : ?>
-            <a href="form" class="btn english">Apply/Print</a>
-            <a href="logout" class="btn logout">Logout</a>
-        <?php else : ?>
-            <a href="login" class="btn">Login/Register</a>
-        <?php endif; ?>
-    </div> -->
-
 <!DOCTYPE html>
 <html style="overflow: auto" itemscope itemtype="http://schema.org/WebPage" lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="pingback" href="../xmlrpc.php">
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var ajaxurl = "public/wp-admin/admin-ajax.html";
-        /* ]]> */
-    </script>
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <title>Development Management Institute | CCM</title>
     <link rel="stylesheet" id="lp-course-wishlist-css" href="public/wp-content/plugins/learnpress-wishlist/assets/css/wishlista5a7.css?ver=652e4748a5e2f" type="text/css" media="all" />
@@ -1263,7 +1231,6 @@
     <link rel="stylesheet" id="learnpress-widgets-css" href="public/wp-content/plugins/learnpress/assets/css/widgetsaf51.css?ver=652e47484732d" type="text/css" media="all" />
     <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.3.2" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <!-- <link rel="stylesheet" href="public/css/bootstrap.min.css"> -->
     <script type="text/javascript" src="public/wp-includes/js/jquery/jquery.min3088.js?ver=3.7.0" id="jquery-core-js"></script>
     <script type="text/javascript" src="public/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
     <script type="text/javascript" src="public/wp-content/plugins/revslider/public/assets/js/rbtools.min627e.js?ver=6.6.14" async id="tp-tools-js"></script>
@@ -1818,13 +1785,6 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
     </style>
-    <script type="text/javascript">
-        if (typeof ajaxurl === 'undefined') {
-            /* <![CDATA[ */
-            var ajaxurl = "public/wp-admin/admin-ajax.html";
-            /* ]]> */
-        }
-    </script>
     <style>
         .carousel-container {
             width: 80%;

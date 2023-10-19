@@ -83,7 +83,6 @@
                         <div class="text-danger err err-email"></div>
                     </div>
                     <div class="col">
-                        <!-- <input type="text" class="form-control" placeholder="Gender" aria-label="Gender" name="gender" id="gender"> -->
                         <div class="text-danger err err-gender"></div>
                         <select name="gender" id="gender" class="form-control">
                             <option value="">Gender</option>
@@ -158,14 +157,12 @@
                 </div>
                 <div class="row form-row">
                     <div class="col">
-                        <!-- <input type="text" class="form-control" name="state" id="state" placeholder="State" aria-label="State"> -->
                         <select class="form-control" name="state" id="state">
                             <option value="">Select State</option>
                             <option value="Bihar">Bihar</option>
                         </select>
                     </div>
                     <div class="col">
-                        <!-- <input type="text" class="form-control" name="district" id="district" placeholder="District" aria-label="District"> -->
                         <select class="form-control" name="district" id="district">
                             <option value="">Select District</option>
                         </select>

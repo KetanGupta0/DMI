@@ -1,49 +1,3 @@
-<!-- <script src="public/js/cdn.jsdelivr.net_npm_sweetalert2@11.js"></script>
-<script src="public/js/bootstrap.bundle.min.js"></script>
-<script src="public/js/code.jquery.com_jquery-3.7.1.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#userRegistrationFormSubmit').click(function(e) {
-            const mobile = $('#mobile').val();
-            const name = $('#fname').val();
-            const email = $('#email').val();
-            const dob = $('#dob').val();
-            if (email == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Email is required!',
-                });
-            } else if (name == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Name is required!',
-                });
-            } else if (dob == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Date of birth is required!',
-                });
-            } else if (mobile.length != 10) {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Invalid mobile number!',
-                });
-            }
-        });
-    });
-</script>
-</body>
-
-</html> -->
-
 <footer id="colophon" class="site-footer thim-footer-therapist">
     <div class="copyright-area">
         <div class="container">
@@ -114,9 +68,6 @@
 <link rel="stylesheet" id="mo-wp-bootstrap-main-css" href="public/wp-content/plugins/miniorange-login-openid/includes/css/bootstrap.min-previewe35d.css?ver=6.3.2" type="text/css" media="all" />
 <link rel="stylesheet" id="tiptipcss-css" href="public/wp-content/plugins/pricing-table-plus/css/site/tipTipe35d.css?ver=6.3.2" type="text/css" media="all" />
 <link rel="stylesheet" id="rs-plugin-settings-css" href="public/wp-content/plugins/revslider/public/assets/css/rs6627e.css?ver=6.6.14" type="text/css" media="all" />
-<style id="rs-plugin-settings-inline-css" type="text/css">
-    #rs-demo-id {}
-</style>
 <script type="text/javascript" src="public/wp-content/plugins/learnpress-wishlist/assets/js/wishlista5a7.js?ver=652e4748a5e2f" id="lp-course-wishlist-js"></script>
 <script type="text/javascript" src="public/wp-content/plugins/contact-form-7/includes/swv/js/indexf658.js?ver=5.8.1" id="swv-js"></script>
 <script type="text/javascript" src="public/wp-content/plugins/contact-form-7/includes/js/indexf658.js?ver=5.8.1" id="contact-form-7-js"></script>
@@ -262,13 +213,6 @@
 </script>
 <script type="text/javascript" src="public/wp-includes/js/dist/url.min3338.js?ver=8814d23f2d64864d280d" id="wp-url-js"></script>
 <script type="text/javascript" src="public/wp-includes/js/dist/api-fetch.min471f.js?ver=0fa4dabf8bf2c7adf21a" id="wp-api-fetch-js"></script>
-<script id="wp-api-fetch-js-after" type="text/javascript">
-    wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("../wp-json/index.html"));
-    wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware("7bd7ab81ac");
-    wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
-    wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
-    wp.apiFetch.nonceEndpoint = "public/wp-admin/admin-ajaxf809.html?action=rest-nonce";
-</script>
 <script type="text/javascript" src="public/wp-content/plugins/thim-elementor-kit/build/widgetse916.js?ver=1.1.7.3" id="thim-ekit-widgets-js"></script>
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/libs/bootstrap.mina6f4.js?ver=3.7.1.7" id="thim-bootstrap-js"></script>
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/libs/theia-sticky-sidebar.mina6f4.js?ver=3.7.1.7" id="theia-sticky-sidebar-js"></script>
@@ -277,25 +221,15 @@
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/libs/thim-contentslidera6f4.js?ver=3.7.1.7" id="thim-jquery-contentslider-js"></script>
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/libs/smooth_scroll.mina6f4.js?ver=3.7.1.7" id="smooth-scroll-js"></script>
 <script type="text/javascript" src="public/wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4" id="imagesloaded-js"></script>
-<script type="text/javascript" id="thim-custom-script-js-extra">
-    /* <![CDATA[ */
-    var thim_placeholder = {
-        "login": "Username",
-        "password": "Password"
-    };
-    /* ]]> */
-</script>
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/custom-script.mina6f4.js?ver=3.7.1.7" id="thim-custom-script-js"></script>
 <script type="text/javascript" src="public/wp-content/plugins/miniorange-login-openid/includes/js/mo_openid_jquery.cookie.mine35d.js?ver=6.3.2" id="js-cookie-script-js"></script>
 <script type="text/javascript" src="public/wp-content/themes/coaching/assets/js/libs/owl.carousel.mina6f4.js?ver=3.7.1.7" id="owl-carousel-js"></script>
 <script type="text/javascript" src="public/wp-content/plugins/pricing-table-plus/js/site/jquery.tipTip.minifiede35d.js?ver=6.3.2" id="tiptipjs-js"></script>
 <script type="text/javascript" id="siteorigin-panels-front-styles-js-extra">
-    /* <![CDATA[ */
     var panelsStyles = {
         "fullContainer": "body",
         "stretchRows": "1"
     };
-    /* ]]> */
 </script>
 <script type="text/javascript" src="public/wp-content/plugins/siteorigin-panels/js/styling.minc30a.js?ver=2.26.1" id="siteorigin-panels-front-styles-js"></script>
 <script type="text/javascript">
@@ -311,56 +245,12 @@
                 slide.style.display = (i === index) ? 'block' : 'none';
             });
         }
-
         function nextSlide() {
             currentSlide = (currentSlide + 1) % slides.length;
             showSlide(currentSlide);
         }
-
-        // Initial setup
         showSlide(currentSlide);
-
-        // Auto slide every 3 seconds
         setInterval(nextSlide, 3000);
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $('#userRegistrationFormSubmit').click(function(e) {
-            const mobile = $('#mobile').val();
-            const name = $('#fname').val();
-            const email = $('#email').val();
-            const dob = $('#dob').val();
-            if (email == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Email is required!',
-                });
-            } else if (name == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Name is required!',
-                });
-            } else if (dob == '') {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Date of birth is required!',
-                });
-            } else if (mobile.length != 10) {
-                e.preventDefault();
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Invalid mobile number!',
-                });
-            }
-        });
     });
 </script>
 </body>

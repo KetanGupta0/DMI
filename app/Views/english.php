@@ -20,8 +20,8 @@
                                             <div class="panel-widget-style panel-widget-style-for-5644-0-0-0" style="padding: 0!important;">
                                                 <h3 class="widget-title">certificate course in management:<br> enhancing employablity skills</h3>
                                                 <div class="textwidget"><br>
-                                                    <p>यह सर्टिफिकेट कोर्स आपकी रोजगार क्षमता और उच्च शिक्षा के अवसरों को बढ़ाने के साथ-साथ आपके तकनीकी और Soft-skill के विकास मे मदद करेगा। ऐसे कोर्स की आवश्यकता है क्योंकि नियोक्ता और उच्च शिक्षण संस्थान इन गुणों के बारे मे बहुत महत्व देते है। आप जरूरी तकनीकी और Soft-skillप्राप्त करके आज की कड़ी प्रतिस्पर्धा मे आगे रहने के लिए बेहतर मार्गदर्शन भी ले सकते है। आपकी आवश्यकता को समझते हुए DMI के faculty ने इस अवसर का लाभ उठाने मे आपकी मदद करने के लिए इस सर्टिफिकेट कोर्स को तैयार किया है। यह एक ऐसा अवसर है जिसमे आप DMI के सर्वश्रेष्ठ faculty से सीखने का मौका प्राप्त कर सकते है।</p>
-                                                    <p>इस कार्यक्रम से आपको बैंकिंग, SSC, Railway, CAT, MAT, XMAT, CMAT और अन्य प्रतियोगी परीक्षाओ और साक्षात्कारों के लिए तैयारी करने मे मदद मिलेगी। यह कोर्स आपको गणित, अंग्रेजी, संचार, IT, और People Management Skill इत्यादि मे सुधार करने मे सक्षम बनाएगा।</p>
+                                                    <p>The certificate course will hone your technical and soft skills to enhance your employability and higher education opportunities. Your need for such a course is important because employers and higher education institutes think about these qualities highly and reward them. Also, you seek better guidance to stay ahead of though competition by acquiring desired technical and soft skills. DMI appreciates your need and the faculty at DMI has designed this certificate course as an outreach to help you gain by taking advantage of this opportunitiy. You will be learning from the best of the faculty at DMI.</p>
+                                                    <p>The certificate course helps you prepare for competitive examination and interviews like Banking, SSC, Railway, CAT, MAT,XAT, CMAT, and more. It enables you to improve your Math, English, Communication, IT and People Management Skills.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -53,7 +53,7 @@
                                                         <div class="thim-carousel-wrapper" data-navigation="1" data-visible="2">
                                                             <div class="item">
                                                                 <div class="top">
-                                                                    <h3 class="title">पाठ्यक्रम सामग्री</h3>
+                                                                    <h3 class="title">Course Contents</h3>
                                                                     <div class="description">
                                                                         <ul>
                                                                             <li>Data Analysis and Interpretation</li>
@@ -68,32 +68,33 @@
                                                             </div>
                                                             <div class="item">
                                                                 <div class="top">
-                                                                    <h3 class="title">शिक्षा विज्ञान</h3>
+                                                                    <h3 class="title">Pedagogy</h3>
                                                                     <div class="description">
-                                                                        प्रशक्षण कार्यक्रम को इंटरैक्टिव सत्र के मध्ययम से तथा प्रबंधन से संबंधित खेल, केस-अध्ययन पर चर्चा के माध्यम से सुविधाजनक बनाया जाएगा। कक्षा मे भागीदारी और समस्या-समाधान के मध्ययम से सीखने पर जोर दिया गया है।
+                                                                        The training programme will be facilitated through interactive sessions, management games, case study exercises, and discussions. The emphasis is on learning through class participation and problem-solving.
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item">
                                                                 <div class="top">
-                                                                    <h3 class="title">कार्यक्रम की मुख्य बातें</h3>
+                                                                    <h3 class="title">Course Highlights</h3>
                                                                     <div class="description">
                                                                         <ul>
-                                                                            <li>पाठ्यक्रम की अवधि : 3 महीने</li>
-                                                                            <li>कुल सीटें : 50 सीटें</li>
-                                                                            <li>आयु : अधिकतम आयु सीमा 30 वर्ष</li>
-                                                                            <li>कार्यक्रम शुल्क : ₹1000/-</li>
-                                                                            <li>पात्रता : जो स्नातक कर चुके या कर रहें हैं</li>
+                                                                            <li>Course Duration : 3 Months</li>
+                                                                            <li>Total Seats : 50 Seats</li>
+                                                                            <li>Age : Maximum age limit is 30 years</li>
+                                                                            <li>Course Fee : ₹1000/-</li>
+                                                                            <li>Eligibility : Students pursuing / completed graduation</li>
+                                                                            <li>Class Schedule : 4 pm - 6 pm pn Monday, Wednesday & Friday</li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item">
                                                                 <div class="top">
-                                                                    <h3 class="title">आवेदन की तिथि</h3>
+                                                                    <h3 class="title">Application Date</h3>
                                                                     <div class="description">
-                                                                        आवेदन जमा करने की अंतिम तिथि 12 ऑक्टोबर, 2023 <br>
-                                                                        कार्यक्रम समन्यवक / संकाय : प्रो. शंकर पूर्वे, Ph.D, IIT धनबाद, NIT जमशेदपुर Ex-faculty IIM, शिलांग
+                                                                        Last date to submit the application October 12, 2023<br>
+                                                                        Name of Faculty - Coordinator Prof. Shankar Purbey, Ph.D. IIT Dhanbad, NIT Jamshedpur Ex. Faculty, IIM Shillong
                                                                     </div>
                                                                 </div>
                                                             </div>
