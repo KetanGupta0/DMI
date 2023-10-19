@@ -46116,6 +46116,10 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
 #pg-5644-3>.panel-row-style {
   padding-top: 0px !important;
 }
+.bg-light-grey{
+  background-color: #f2f2f2;
+  width: 100%;
+}
 @media screen and (max-width: 1025px){
   .qr{
     display: block;

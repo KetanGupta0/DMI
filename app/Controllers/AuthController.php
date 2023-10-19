@@ -77,12 +77,12 @@ class AuthController extends BaseController
                     } else {
                         $this->session->setFlashdata('alertType', 'danger');
                         $this->session->setFlashdata('alertMessage', 'Invalid password!');
-                        return redirect()->to('login');
+                        return redirect()->back();
                     }
                 } else {
                     $this->session->setFlashdata('alertType', 'danger');
                     $this->session->setFlashdata('alertMessage', 'Email not registered!');
-                    return redirect()->to('login');
+                    return redirect()->back();
                 }
                 if ($valid) {
                     $sessionData = [
@@ -101,12 +101,12 @@ class AuthController extends BaseController
                 } else {
                     $this->session->setFlashdata('alertType', 'danger');
                     $this->session->setFlashdata('alertMessage', 'Invalid email or password.');
-                    return redirect()->to('login');
+                    return redirect()->back();
                 }
             } else {
                 $this->session->setFlashdata('alertType', 'danger');
                 $this->session->setFlashdata('alertMessage', 'Invalid email or password.');
-                return redirect()->to('login');
+                return redirect()->back();
             }
         }
     }
