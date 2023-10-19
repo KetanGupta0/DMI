@@ -46139,4 +46139,8 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
   .text-copyright{
     text-align: center !important;
   }
+  .copyright-msg{
+    text-align: center !important;
+    padding: 10px 0 !important;
+  }
 } 
