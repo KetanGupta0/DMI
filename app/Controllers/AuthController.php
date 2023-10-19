@@ -164,6 +164,6 @@ class AuthController extends BaseController
     // Test function
     public function test()
     {
-        echo ``;
+        echo view('basic');
     }
 }

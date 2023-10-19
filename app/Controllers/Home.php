@@ -31,9 +31,9 @@ class Home extends BaseController
     public function form()
     {
         if ($this->session->has('logged_in') && $this->session->get('logged_in') === true) {
-            echo view('header');
+            // echo view('header');
             echo view('form');
-            echo view('footer');
+            // echo view('footer');
         } else {
             return redirect('login');
         }
