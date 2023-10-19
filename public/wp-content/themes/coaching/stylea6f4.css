@@ -11226,8 +11226,8 @@ body.logged-in #comments .comment-respond-area #respond.comment-respond .comment
   background: rgba(0, 0, 0, 0.5);
 }
 .top_site_main .page-title-wrapper {
-  padding-top: 53px;
-  padding-bottom: 81px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: left;
   position: relative;
   z-index: 1;
@@ -23139,7 +23139,7 @@ and open the template in the editor.
 }
 .thim-timeline-slider .item {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .thim-timeline-slider .item:after {
   content: "";
@@ -46070,6 +46070,14 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
   background-color: #000!important;
   color: white!important;
 }
+.copyright-content{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.copyright-msg{
+  padding: 20px 0 !important;
+  font-size: 12px !important;
+}
 .ficons{
   height: 30px;
 }
@@ -46090,6 +46098,24 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
   padding: 5px !important;
   text-align: center !important;
 }
+.faculty-coordinator{
+  height: auto !important;
+  max-width: 250px !important;
+}
+.coordinator-title{
+  font-size: 20px !important;
+  color: #9b131f !important;
+  font-weight: bold !important;
+}
+.coordinator-block{
+  margin-bottom: 50px !important;
+}
+.sc_heading{
+  padding-top: 0 !important;
+}
+#pg-5644-3>.panel-row-style {
+  padding-top: 0px !important;
+}
 @media screen and (max-width: 1025px){
   .qr{
     display: block;
@@ -46099,3 +46125,14 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
     padding-top: 0 !important;
   }
 }
+@media (max-width: 767px){
+  .site-content{
+    padding: 0 15px !important;
+  }
+  .coordinator-block{
+    margin-bottom: 0px !important;
+  }
+  .text-copyright{
+    text-align: center !important;
+  }
+} 

@@ -4,7 +4,9 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\applicationModel;
+use App\Models\ContactUs;
 use App\Models\States;
+use CodeIgniter\HTTP\Message;
 
 class AuthController extends BaseController
 {
@@ -22,7 +24,7 @@ class AuthController extends BaseController
     // Auth Views
     public function login()
     {
-        if ($this->session->has('logged_in') && $this->session->get('logged_in') === true){
+        if ($this->session->has('logged_in') && $this->session->get('logged_in') === true) {
             return redirect('/');
         } else {
             echo view('header');
@@ -32,7 +34,7 @@ class AuthController extends BaseController
     }
     public function register()
     {
-        if ($this->session->has('logged_in') && $this->session->get('logged_in') === true){
+        if ($this->session->has('logged_in') && $this->session->get('logged_in') === true) {
             return redirect('/');
         } else {
             echo view('header');
@@ -65,7 +67,6 @@ class AuthController extends BaseController
             if ($validation->withRequest($this->request)->run()) {
                 $model = new ApplicationModel();
                 $valid = false;
-                $userId = 0;
                 $user = $model->where('applicant_email', $this->request->getPost('email'))->first();
                 if ($user) {
                     $dateTime = new \DateTime($user['applicant_dob']);
@@ -128,7 +129,7 @@ class AuthController extends BaseController
                 $this->session->setFlashdata('alertMessage', 'Mobile is already used!');
                 return redirect()->to('register');
             }
-            if($this->request->getPost('name') != '' && $this->request->getPost('dob') != '' && $this->request->getPost('email') != '' && $this->request->getPost('mobile') != ''){
+            if ($this->request->getPost('name') != '' && $this->request->getPost('dob') != '' && $this->request->getPost('email') != '' && $this->request->getPost('mobile') != '') {
                 $data = [
                     'applicant_name_english' => $this->request->getPost('name'),
                     'applicant_dob' => $this->request->getPost('dob'),
@@ -159,6 +160,36 @@ class AuthController extends BaseController
         // Destroy the session
         $session->destroy();
         return redirect('/');
+    }
+
+    public function contactUsData()
+    {
+        $model = new ContactUs();
+        $email = $this->request->getPost('email');
+        $name = $this->request->getPost('name');
+        $subject = $this->request->getPost('subject');
+        $message = $this->request->getPost('message');
+        if ($email == '' || $name == '' || $subject == '' || $message == '') {
+            $this->session->setFlashdata('alertType', 'error');
+            $this->session->setFlashdata('alertMessage', 'Required fields cannot be blank!');
+            return redirect()->back();
+        } else {
+            $data = [
+                'user_name' => $name,
+                'user_email' => $email,
+                'user_subject' => $subject,
+                'user_description' => $message
+            ];
+            if ($model->insert($data)) {
+                $this->session->setFlashdata('alertType', 'success');
+                $this->session->setFlashdata('alertMessage', 'Record saved successfully!');
+                return redirect()->back();
+            } else{
+                $this->session->setFlashdata('alertType', 'error');
+                $this->session->setFlashdata('alertMessage', 'Please try after sometimes!');
+                return redirect()->back();
+            }
+        }
     }
 
     // Test function

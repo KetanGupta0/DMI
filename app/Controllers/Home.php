@@ -38,4 +38,10 @@ class Home extends BaseController
             return redirect('login');
         }
     }
+
+    public function profDebiprasadMishra(){
+        echo view('header');
+        echo view('faculty/prof-debiprasad-mishra');
+        echo view('footer');
+    }
 }
