@@ -140,10 +140,10 @@ class AuthController extends BaseController
                 if ($model->insert($data)) {
 
                     $email = service('email');
-
+                    $reciever = $this->request->getPost('email');
                     // Set email parameters
                     $email->setFrom('ckg4155@gmail.com', 'Ketan Gupta'); // This line needs attention
-                    $email->setTo($this->request->getPost('email'));
+                    $email->setTo($reciever);
 
                     // Additional recipients (CC and BCC)
                     // $ccEmails = ['cc1@example.com', 'cc2@example.com'];
