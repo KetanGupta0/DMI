@@ -1839,7 +1839,7 @@
                                             </li>
                                         <?php else : ?>
                                             <li class="menu-item menu-item-type-post_type_archive menu-item-object-lp_course menu-item-6593 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default">
-                                                <a href="demo3" class="tc-menu-inner fsize">Apply here</a>
+                                                <a href="login" class="tc-menu-inner fsize">Apply here</a>
                                             </li>
                                         <?php endif; ?>
                                     </ul>
@@ -1882,7 +1882,7 @@
                         </li>
                     <?php else : ?>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7111 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default">
-                            <a href="demo3" class="tc-menu-inner">Apply here</a>
+                            <a href="login" class="tc-menu-inner">Apply here</a>
                         </li>
                     <?php endif; ?>
                 </ul>

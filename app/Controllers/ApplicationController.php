@@ -62,6 +62,11 @@ class ApplicationController extends BaseController
                     // Set email parameters
                     $email->setFrom('ckg4155@gmail.com', 'Ketan Gupta'); // This line needs attention
                     $email->setTo($this->session->get('email'));
+                    
+                    // Additional recipients (CC and BCC)
+                    // $ccEmails = ['cc1@example.com', 'cc2@example.com'];
+                    // $bccEmails = ['bcc1@example.com', 'bcc2@example.com'];
+
                     $email->setSubject('CCM Registration');
                     $email->setMessage('Thanks for registering for the Certificate course in Management, your are required to visit the Institue and pay the Course fee with the printout of the filled in application form.');
 

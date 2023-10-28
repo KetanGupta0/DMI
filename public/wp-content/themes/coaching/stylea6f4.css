@@ -11215,7 +11215,7 @@ body.logged-in #comments .comment-respond-area #respond.comment-respond .comment
   position: relative;
   background-size: cover;
   background-position: center center;
-  min-height: 150px;
+  /* min-height: 150px; */
 }
 .top_site_main > .overlay-top-header {
   position: absolute;

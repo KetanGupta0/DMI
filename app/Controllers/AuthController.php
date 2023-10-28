@@ -144,6 +144,11 @@ class AuthController extends BaseController
                     // Set email parameters
                     $email->setFrom('ckg4155@gmail.com', 'Ketan Gupta'); // This line needs attention
                     $email->setTo($this->request->getPost('email'));
+
+                    // Additional recipients (CC and BCC)
+                    // $ccEmails = ['cc1@example.com', 'cc2@example.com'];
+                    // $bccEmails = ['bcc1@example.com', 'bcc2@example.com'];
+
                     $email->setSubject('DMI Registration Acknowledgement');
                     $email->setMessage('Thanks for showing interest in the Certificate course in Management. To enable further process, you are required to fill in details by login to the portal with your date of birth as password.');
 

@@ -11,14 +11,7 @@
     </script>
 <?php endif; ?>
 <section class="content-area">
-    <div class="top_site_main" style="color: #ffffff;background-image:url(public/img/slide2.jpg);">
-        <span class="overlay-top-header" style="background:rgba(0,0,0,0.5);"></span>
-        <div class="page-title-wrapper">
-            <div class="banner-wrapper container">
-                <h1>Certificate Course</h1>
-            </div>
-        </div>
-    </div>
+    <div class="top_site_main" style="color: #ffffff;"><!-- background-image:url(public/img/slide2.jpg); --></div>
     <div class="container site-content">
         <div class="row">
             <main id="main-item" class="site-main col-sm-12 full-width">
@@ -62,7 +55,7 @@
                                             <div class="thim-widget-timeline-slider template-base">
                                                 <div class="thim-timeline-slider">
                                                     <div class="container">
-                                                        <div class="thim-carousel-wrapper" data-navigation="1" data-visible="2">
+                                                        <div class="thim-carousel-wrapper" data-navigation="0" data-visible="4">
                                                             <div class="item">
                                                                 <div class="top">
                                                                     <h3 class="title">Course Contents</h3>
@@ -154,121 +147,73 @@
         </div>
     </main>
 </div>
-<div class="bg-light-grey">
-    <div class="container">
-        <h4 class="widget-title"><strong>Contact Us</strong></h4>
-        <div style="width: 30px; border:1px solid #9b131f"></div><br>
-        <main class="site-main col-sm-12">
-            <div class="col-sm-6">
-                <div id="panel-87-0-1-0" class="so-panel widget widget_heading panel-first-child" data-index="4">
-                    <div class="panel-widget-style panel-widget-style-for-87-0-1-0">
-                        <div class="thim-widget-heading template-base">
-                            <div class="sc_heading   text-left">
-                                <h3 class="title">Feedback form</h3>
-                                <p class="sub-heading" style>Your email address will
-                                    not be published. Required fields are marked.
-                                </p><span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="panel-87-0-1-1" class="so-panel widget widget_text panel-last-child" data-index="5">
-                    <div class="textwidget">
-                        <div class="wpcf7 no-js" id="wpcf7-f4-p87-o2" lang="en-US" dir="ltr">
-                            <div class="screen-reader-response">
-                                <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                <ul></ul>
-                            </div>
-                            <form action="contact-us-data" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                <p><label> Your Name (required)<br />
-                                        <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value type="text" name="name" /></span> </label>
-                                </p>
-                                <p><label> Your Email (required)<br />
-                                        <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value type="email" name="email" /></span> </label>
-                                </p>
-                                <p><label> Subject (required)<br />
-                                        <span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value type="text" name="subject" /></span>
-                                    </label>
-                                </p>
-                                <p><label> Your Message (required)<br />
-                                        <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="message"></textarea></span>
-                                    </label>
-                                </p>
-                                <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit" />
-                                </p>
-                                <div class="wpcf7-response-output" aria-hidden="true"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div id="panel-87-0-0-0" class="so-panel widget widget_heading panel-first-child" data-index="0">
-                    <div class="panel-widget-style panel-widget-style-for-87-0-0-0">
-                        <div class="thim-widget-heading template-base">
-                            <div class="sc_heading   text-left">
-                                <h3 class="title">Contact details</h3>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="panel-87-0-0-1" class="so-panel widget widget_icon-box" data-index="1">
-                    <div class="thim-widget-icon-box template-base">
-                        <div class="wrapper-box-icon text-left contact_info ">
-                            <div class="iconbox-left clearfix">
-                                <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-phone" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
-                                </div>
-                                <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
-                                    <div class="sc-heading article_heading">
-                                        <h3 class="heading__primary">Phone</h3>
+<div style="width: 100%; background-color: #f2f2f2;">
+    <div class="bg-light-grey container">
+        <div class="container container1">
+            <h4 class="widget-title"><strong>Contact Us</strong></h4>
+            <div style="width: 30px; border:1px solid #9b131f;"></div><br>
+            <main class="site-main">
+                <div class="">
+                    <div id="panel-87-0-0-1" class="so-panel widget widget_icon-box" data-index="1">
+                        <div class="thim-widget-icon-box template-base">
+                            <div class="wrapper-box-icon text-left contact_info ">
+                                <div class="iconbox-left clearfix">
+                                    <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-phone" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
                                     </div>
-                                    <div class="desc-icon-box">
-                                        <p><a href="tel:+917091496207">+917091496207</a></p>
+                                    <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
+                                        <div class="sc-heading article_heading">
+                                            <h3 class="heading__primary">Phone</h3>
+                                        </div>
+                                        <div class="desc-icon-box">
+                                            <p><a href="tel:+917091496207">+917091496207</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel-87-0-0-2" class="so-panel widget widget_icon-box" data-index="2">
+                        <div class="thim-widget-icon-box template-base">
+                            <div class="wrapper-box-icon text-left contact_info ">
+                                <div class="iconbox-left clearfix">
+                                    <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-envelope-o" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
+                                    </div>
+                                    <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
+                                        <div class="sc-heading article_heading">
+                                            <h3 class="heading__primary">Email</h3>
+                                        </div>
+                                        <div class="desc-icon-box">
+                                            <p><span class="__cf_email__">cep@dmi.ac.in</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel-87-0-0-3" class="so-panel widget widget_icon-box panel-last-child" data-index="3">
+                        <div class="thim-widget-icon-box template-base">
+                            <div class="wrapper-box-icon text-left contact_info ">
+                                <div class="iconbox-left clearfix">
+                                    <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-map-marker" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
+                                    </div>
+                                    <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
+                                        <div class="sc-heading article_heading">
+                                            <h3 class="heading__primary">Address</h3>
+                                        </div>
+                                        <div class="desc-icon-box">
+                                            <p>Development Management Institute, 2nd Floor, Udyog Bhawan, East Gandhi Maidan, Patna - 800004</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="panel-87-0-0-2" class="so-panel widget widget_icon-box" data-index="2">
-                    <div class="thim-widget-icon-box template-base">
-                        <div class="wrapper-box-icon text-left contact_info ">
-                            <div class="iconbox-left clearfix">
-                                <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-envelope-o" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
-                                </div>
-                                <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
-                                    <div class="sc-heading article_heading">
-                                        <h3 class="heading__primary">Email</h3>
-                                    </div>
-                                    <div class="desc-icon-box">
-                                        <p><span class="__cf_email__">cep@dmi.ac.in</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="panel-87-0-0-3" class="so-panel widget widget_icon-box panel-last-child" data-index="3">
-                    <div class="thim-widget-icon-box template-base">
-                        <div class="wrapper-box-icon text-left contact_info ">
-                            <div class="iconbox-left clearfix">
-                                <div class="boxes-icon" style="width: 30px;height: 30px;"><span class="inner-icon"><span class="icon"><i class="fa fa-map-marker" style="color:#ff5151; font-size:25px; line-height:25px; vertical-align: middle;"></i></span></span>
-                                </div>
-                                <div class="content-inner" style="width: calc( 100% - 30px - 15px);">
-                                    <div class="sc-heading article_heading">
-                                        <h3 class="heading__primary">Address</h3>
-                                    </div>
-                                    <div class="desc-icon-box">
-                                        <p>Development Management Institute, 2nd Floor, Udyog Bhawan, East Gandhi Maidan, Patna - 800004</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+            </main>
+        </div>
+        <div class="container container2">
+            <img class="contact-logo" src="public/img/courseimg.jpg" alt="" height="100px">
+        </div>
     </div>
 </div>

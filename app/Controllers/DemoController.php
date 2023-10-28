@@ -28,14 +28,4 @@ class DemoController extends BaseController
         echo view('hindi1');
         echo view('footer1');
     }
-    public function login()
-    {
-        if ($this->session->has('logged_in') && $this->session->get('logged_in') === true){
-            return redirect('/');
-        } else {
-            echo view('header1');
-            echo view('login1');
-            echo view('footer1');
-        }
-    }
 }

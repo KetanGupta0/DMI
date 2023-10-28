@@ -1,12 +1,5 @@
 <section class="content-area">
-    <div class="top_site_main" style="color: #ffffff;background-image:url(public/img/slide2.jpg);">
-        <span class="overlay-top-header" style="background:rgba(0,0,0,0.5);"></span>
-        <div class="page-title-wrapper">
-            <div class="banner-wrapper container">
-                <h1>Certificate Course</h1>
-            </div>
-        </div>
-    </div>
+    <div class="top_site_main" style="color: #ffffff;"><!-- background-image:url(public/img/slide2.jpg); --></div>
     <div class="container site-content">
         <div class="row">
             <main id="main-item" class="site-main col-sm-12 full-width">
@@ -53,7 +46,7 @@
                                                         <div class="thim-carousel-wrapper" data-navigation="0" data-visible="4">
                                                             <div class="item">
                                                                 <div class="top">
-                                                                    <h3 class="title">पाठ्यक्रम सामग्री</h3>
+                                                                    <h3 class="title">पाठ्यक्रम</h3>
                                                                     <div class="description">
                                                                         <ul>
                                                                             <li>Data Analysis and Interpretation</li>
@@ -142,7 +135,8 @@
         </div>
     </main>
 </div>
-<div class="bg-light-grey">
+<div style="width: 100%; background-color: #f2f2f2;">
+<div class="bg-light-grey container">
     <div class="container container1">
         <h4 class="widget-title"><strong>संपर्क करें</strong></h4>
         <div style="width: 30px; border:1px solid #9b131f;"></div><br>
@@ -209,4 +203,5 @@
     <div class="container container2">
         <img class="contact-logo" src="public/img/courseimg.jpg" alt="" height="100px">
     </div>
+</div>
 </div>
