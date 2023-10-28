@@ -71,7 +71,7 @@
                 <div class="row form-row">
                     <div class="col">
                         <div style="display: flex;">
-                            <label for="dob" style="flex: 3;">Date of Birth</label>&nbsp;<input class="form-control" style="flex: 7;" type="date" name="dob" id="dob" value="<?php if (session('logged_in')) echo $userDob; ?>" disabled>
+                            <label for="dob" style="flex: 3;">Date of Birth</label>&nbsp;<input class="form-control" style="flex: 7;" type="text" name="dob" id="dob" value="<?php if (session('logged_in')) echo $userDob; ?>" disabled>
                         </div>
                         <div class="text-danger err err-dob"></div>
                     </div>
