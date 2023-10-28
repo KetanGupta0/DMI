@@ -20,8 +20,10 @@
                 <input type="text" name="name" class="form-control" id="fname">
             </div>
             <div class="mb-3">
-                <label for="dob" class="form-label">Date of Birth</label>
-                <input type="date" name="dob" class="form-control" id="dob" max="2005-12-31">
+                <!-- Displayed Date Input -->
+                <label for="dob">Date of Birth:</label>
+                <input type="text" name="dob" id="dob" class="form-control" placeholder="dd/mm/yyyy" autocomplete="off" readonly>
+                <button type="button" id="pickDateBtn" style="display: none;">Pick Date</button>
             </div>
             <div class="mb-3">
                 <label for="mobile" class="form-label">Mobile</label>
@@ -93,4 +95,21 @@
             console.error("reCAPTCHA script not loaded or initialized.");
         }
     }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Pikaday
+        const picker = new Pikaday({
+            field: document.getElementById('dob'),
+            format: 'DD/MM/YYYY', // Customize the date format here
+            maxDate: new Date('2010-12-31'), // Optional: Set the maximum allowed date
+            // minDate: new Date('1950-01-01'), // Set the minimum allowed date
+            yearRange: [1950, 2010], // Set the range of selectable years
+        });
+
+        // Show the date picker when the "Pick Date" button is clicked
+        document.getElementById('pickDateBtn').addEventListener('click', function() {
+            picker.show();
+        });
+    });
 </script>

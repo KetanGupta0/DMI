@@ -69,9 +69,8 @@ class AuthController extends BaseController
                 $valid = false;
                 $user = $model->where('applicant_email', $this->request->getPost('email'))->first();
                 if ($user) {
-                    $dateTime = new \DateTime($user['applicant_dob']);
-                    $formattedDate = $dateTime->format('d-m-Y');
-                    $formattedDateWithoutHyphens = str_replace('-', '', $formattedDate);
+                    $dateTime = $user['applicant_dob'];
+                    $formattedDateWithoutHyphens = str_replace('/', '', $dateTime);
                     if ($formattedDateWithoutHyphens == $this->request->getPost('password')) {
                         $valid = true;
                     } else {

@@ -4,7 +4,7 @@
             <div class="copyright-content">
                 <div class="row">
                     <div class="col-sm-6 copyright-msg">Development Management Institute - All rights reserved  &copy; 20<?php echo date('y');?></div>
-                    <div class="col-sm-6 copyright-msg" style="text-align: right;"><a href="https://www.linkedin.com/in/chandra-kishore-g-4044671bb/" target="_blank">Designed and Developed by Chandra Kishor Gupta</a></div>
+                    <!-- <div class="col-sm-6 copyright-msg" style="text-align: right;"><a href="https://www.linkedin.com/in/chandra-kishore-g-4044671bb/" target="_blank">Designed and Developed by Chandra Kishor Gupta</a></div> -->
                 </div>
             </div>
         </div>
