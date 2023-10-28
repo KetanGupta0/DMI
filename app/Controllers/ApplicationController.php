@@ -57,7 +57,20 @@ class ApplicationController extends BaseController
                     $existingRecord['ug_marks'] = $this->request->getPost('graduationMarks');
                 }
                 if ($model->update($userData['user_id'], $existingRecord)) {
-                    return $this->response->setJSON(['msg' => true, 'data' => $existingRecord]);
+                    $email = service('email');
+
+                    // Set email parameters
+                    $email->setFrom('ckg4155@gmail.com', 'Ketan Gupta'); // This line needs attention
+                    $email->setTo($this->session->get('email'));
+                    $email->setSubject('CCM Registration');
+                    $email->setMessage('Thanks for registering for the Certificate course in Management, your are required to visit the Institue and pay the Course fee with the printout of the filled in application form.');
+
+                    // Send the email
+                    if ($email->send()) {
+                        return $this->response->setJSON(['msg' => true, 'data' => $existingRecord]);
+                    } else {
+                        echo 'Error: ' . $email->printDebugger();
+                    }
                 } else {
                     return $this->response->setJSON(false);
                 }

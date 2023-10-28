@@ -136,10 +136,25 @@ class AuthController extends BaseController
                     'applicant_email' => $this->request->getPost('email'),
                     'applicant_mobile' => $this->request->getPost('mobile')
                 ];
+
                 if ($model->insert($data)) {
-                    $this->session->setFlashdata('alertType', 'success');
-                    $this->session->setFlashdata('alertMessage', 'Account created successfully!');
-                    return redirect()->to('login');
+
+                    $email = service('email');
+
+                    // Set email parameters
+                    $email->setFrom('ckg4155@gmail.com', 'Ketan Gupta'); // This line needs attention
+                    $email->setTo($this->request->getPost('email'));
+                    $email->setSubject('DMI Registration Acknowledgement');
+                    $email->setMessage('Thanks for showing interest in the Certificate course in Management. To enable further process, you are required to fill in details by login to the portal with your date of birth as password.');
+
+                    // Send the email
+                    if ($email->send()) {
+                        $this->session->setFlashdata('alertType', 'success');
+                        $this->session->setFlashdata('alertMessage', 'Account created successfully!');
+                        return redirect()->to('login');
+                    } else {
+                        echo 'Error: ' . $email->printDebugger();
+                    }
                 } else {
                     $this->session->setFlashdata('alertType', 'danger');
                     $this->session->setFlashdata('alertMessage', 'Something went wrong!');
@@ -184,7 +199,7 @@ class AuthController extends BaseController
                 $this->session->setFlashdata('alertType', 'success');
                 $this->session->setFlashdata('alertMessage', 'Record saved successfully!');
                 return redirect()->back();
-            } else{
+            } else {
                 $this->session->setFlashdata('alertType', 'error');
                 $this->session->setFlashdata('alertMessage', 'Please try after sometimes!');
                 return redirect()->back();

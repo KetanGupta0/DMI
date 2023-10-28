@@ -46119,6 +46119,26 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
 .bg-light-grey{
   background-color: #f2f2f2;
   width: 100%;
+  padding: 20px 0;
+  display: flex;
+}
+.container1,.container2{
+  flex: 5;
+  padding: 0 40px;
+}
+.contact-logo{
+  height: auto;
+  width: 100%;
+}
+
+.top{
+  min-height: 381px !important;
+  max-height: 381px !important;
+}
+@media screen and (max-width: 1199px){
+  .thim-carousel-wrapper {
+    data-visible: 3 !important;
+  }
 }
 @media screen and (max-width: 1025px){
   .qr{
@@ -46128,6 +46148,7 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
   .tm-table{
     padding-top: 0 !important;
   }
+  
 }
 @media (max-width: 767px){
   .site-content{
@@ -46142,5 +46163,14 @@ body.learnpress-v4 .pmpro-has-access .lp-pmpro-membership-list a.pmpro_btn:hover
   .copyright-msg{
     text-align: center !important;
     padding: 10px 0 !important;
+  }
+  .bg-light-grey{
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+  }
+  .container1,.container2{
+    padding: 20px;
   }
 } 

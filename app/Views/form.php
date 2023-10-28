@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/landing.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onRecaptchaLoad() {
+        // reCAPTCHA script loaded, enable the form submission
+    }
+    </script>
 </head>
 
 <body>
@@ -46,7 +53,7 @@
 
     <?php endif; ?>
     <div class="form-layout container" <?php if ($userStatus == 2) echo 'style="display: none;"'; ?>>
-        <form action="application/submit" method="post" enctype="multipart/form-data">
+        <form action="application/submit" method="post" enctype="multipart/form-data" id="appfrm" style="padding: 0  0 30px 0;">
             <div class="modal-body">
                 <div class="headerarea">
                     <img src="public/printHeader.jpg" alt="" width="100%">
@@ -189,7 +196,10 @@
                     <div class="text-danger err-declaration"></div>
                 </div>
             </div>
-            <div class="btn btn-primary submit-btn" style="width: fit-content;">Proceed</div>
+            <div style="display: flex; justify-content: center; flex-direction:column; align-items:center">
+                <div class="g-recaptcha" data-sitekey="6LfgfNYoAAAAACKvCY0z3wIv9jZSDOc5Hgqa623G" data-action="LOGIN"></div>
+                <div class="btn btn-primary submit-btn" style="width: fit-content; margin-top: 20px;">Proceed</div>
+            </div>
         </form>
     </div>
     <div class="printable-area container" <?php if ($userStatus == 1) echo 'style="display: none;"'; ?>>
@@ -515,7 +525,9 @@
                     });
                 }
             });
+
             $(".submit-btn").click(function(e) {
+                $(this).removeClass('submit-btn');
                 $(".text-danger").text("");
                 var hname = $("#hname").val().trim();
                 if (hname === "") {
@@ -645,100 +657,76 @@
                     })
                     return;
                 }
-                var formData = new FormData();
-                formData.append('hname', $('#hname').val());
-                formData.append('fname', $('#fname').val());
-                formData.append('mname', $('#mname').val());
-                formData.append('gender', $('#gender').val());
-                formData.append('grad', gradCompletion);
-                formData.append('interPassingYear', $('#interPassingYear').val());
-                formData.append('interCollege', $('#interCollege').val());
-                formData.append('interMarks', $('#interMarks').val());
-                formData.append('graduationPassingYear', $('#graduationPassingYear').val());
-                formData.append('graduationCollege', $('#graduationCollege').val());
-                formData.append('graduationMarks', $('#graduationMarks').val());
-                formData.append('village', $('#village').val());
-                formData.append('post', $('#post').val());
-                formData.append('block', $('#block').val());
-                formData.append('district', $('#district').val());
-                formData.append('state', $('#state').val());
-                formData.append('pin', $('#pin').val());
-                formData.append('photo', $('#photo')[0].files[0]);
-                formData.append('signature', $('#signature')[0].files[0]);
-                $.ajax({
-                    url: "application/submit",
-                    type: "post",
-                    data: formData,
-                    contentType: false,
-                    cache: false,
-                    processData: false,
-                    success: function(response) {
-                        if (response.msg == true) {
-                            Swal.fire({
-                                position: 'top-end',
-                                icon: 'success',
-                                title: 'Form submitted successfully',
-                                showConfirmButton: false,
-                                timer: 3000
-                            })
-                            printing();
-                        } else {
-                            console.log(response);
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'Error',
-                                text: response.responseText,
-                            });
-                        }
-                    },
-                    error: function(error) {
-                        console.log(error);
+                if (typeof grecaptcha !== 'undefined') {
+                    // Check if the captcha response is empty
+                    var captchaResponse = grecaptcha.getResponse();
+                    if (captchaResponse === "") {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Please complete the captcha!',
+                        });
+                    } else {
+                        // The user has completed the captcha, you can now submit the form
+                        var formData = new FormData();
+                        formData.append('hname', $('#hname').val());
+                        formData.append('fname', $('#fname').val());
+                        formData.append('mname', $('#mname').val());
+                        formData.append('gender', $('#gender').val());
+                        formData.append('grad', gradCompletion);
+                        formData.append('interPassingYear', $('#interPassingYear').val());
+                        formData.append('interCollege', $('#interCollege').val());
+                        formData.append('interMarks', $('#interMarks').val());
+                        formData.append('graduationPassingYear', $('#graduationPassingYear').val());
+                        formData.append('graduationCollege', $('#graduationCollege').val());
+                        formData.append('graduationMarks', $('#graduationMarks').val());
+                        formData.append('village', $('#village').val());
+                        formData.append('post', $('#post').val());
+                        formData.append('block', $('#block').val());
+                        formData.append('district', $('#district').val());
+                        formData.append('state', $('#state').val());
+                        formData.append('pin', $('#pin').val());
+                        formData.append('photo', $('#photo')[0].files[0]);
+                        formData.append('signature', $('#signature')[0].files[0]);
+                        $.ajax({
+                            url: "application/submit",
+                            type: "post",
+                            data: formData,
+                            contentType: false,
+                            cache: false,
+                            processData: false,
+                            success: function(response) {
+                                if (response.msg == true) {
+                                    Swal.fire({
+                                        position: 'top-end',
+                                        icon: 'success',
+                                        title: 'Form submitted successfully',
+                                        showConfirmButton: false,
+                                        timer: 3000
+                                    })
+                                    printing();
+                                } else {
+                                    console.log(response);
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        text: response.responseText,
+                                    });
+                                }
+                            },
+                            error: function(error) {
+                                console.log(error);
+                            }
+                        });
                     }
-                });
+                } else {
+                    console.error("reCAPTCHA script not loaded or initialized.");
+                }
             });
         });
     </script>
     <script src="public/js/cdn.jsdelivr.net_npm_sweetalert2@11.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#userRegistrationFormSubmit').click(function(e) {
-                const mobile = $('#mobile').val();
-                const name = $('#fname').val();
-                const email = $('#email').val();
-                const dob = $('#dob').val();
-                if (email == '') {
-                    e.preventDefault();
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Email is required!',
-                    });
-                } else if (name == '') {
-                    e.preventDefault();
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Name is required!',
-                    });
-                } else if (dob == '') {
-                    e.preventDefault();
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Date of birth is required!',
-                    });
-                } else if (mobile.length != 10) {
-                    e.preventDefault();
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error',
-                        text: 'Invalid mobile number!',
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

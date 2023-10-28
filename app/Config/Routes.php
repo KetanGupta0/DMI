@@ -24,6 +24,7 @@ $routes->post('/login-submit', 'AuthController::loginSubmit');
 $routes->post('/register-submit', 'AuthController::registerSubmit');
 $routes->post('/contact-us-data', 'AuthController::contactUsData');
 
+// Demo Routes
 $routes->get('demo1','DemoController::hindi');
 $routes->get('demo2','DemoController::english');
 $routes->get('demo3','DemoController::login');

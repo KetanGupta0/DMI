@@ -1815,7 +1815,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="navigation col-sm-12">
-                            <div class="tm-table" style="padding-top: 20px;">
+                            <div class="tm-table">
                                 <div class="logos">
                                     <img class="logo-main" src="public/img/logo.png" alt="Development Management Institute" />
                                 </div>
@@ -1839,10 +1839,9 @@
                                             </li>
                                         <?php else : ?>
                                             <li class="menu-item menu-item-type-post_type_archive menu-item-object-lp_course menu-item-6593 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default">
-                                                <a href="demo3" class="tc-menu-inner fsize">Login/Register</a>
+                                                <a href="demo3" class="tc-menu-inner fsize">Apply here</a>
                                             </li>
                                         <?php endif; ?>
-                                        <img class="menu-right logo-main-qr" src="public/img/logo2.jpg" alt="">
                                     </ul>
                                 </nav>
                                 <div class="menu-mobile-effect navbar-toggle" data-effect="mobile-effect">
@@ -1883,7 +1882,7 @@
                         </li>
                     <?php else : ?>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7111 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default">
-                            <a href="demo3" class="tc-menu-inner">Login/Register</a>
+                            <a href="demo3" class="tc-menu-inner">Apply here</a>
                         </li>
                     <?php endif; ?>
                 </ul>

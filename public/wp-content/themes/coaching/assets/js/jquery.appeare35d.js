@@ -8,7 +8,7 @@
  *
  * Version: 0.3.3
  */
-(function($) {
+(function ($) {
   var selectors = [];
 
   var check_binded = false;
@@ -24,7 +24,7 @@
   function process() {
     check_lock = false;
     for (var index = 0; index < selectors.length; index++) {
-      var $appeared = $(selectors[index]).filter(function() {
+      var $appeared = $(selectors[index]).filter(function () {
         return $(this).is(':appeared');
       });
 
@@ -39,7 +39,7 @@
   }
 
   // "appeared" custom filter
-  $.expr[':']['appeared'] = function(element) {
+  $.expr[':']['appeared'] = function (element) {
     var $element = $(element);
     if (!$element.is(':visible')) {
       return false;
@@ -52,9 +52,9 @@
     var top = offset.top;
 
     if (top + $element.height() >= window_top &&
-        top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
-        left + $element.width() >= window_left &&
-        left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+      top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
+      left + $element.width() >= window_left &&
+      left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
       return true;
     } else {
       return false;
@@ -63,11 +63,11 @@
 
   $.fn.extend({
     // watching for element's appearance in browser viewport
-    appear: function(options) {
+    appear: function (options) {
       var opts = $.extend({}, defaults, options || {});
       var selector = this.selector || this;
       if (!check_binded) {
-        var on_check = function() {
+        var on_check = function () {
           if (check_lock) {
             return;
           }
@@ -90,7 +90,7 @@
 
   $.extend({
     // force elements's appearance check
-    force_appear: function() {
+    force_appear: function () {
       if (check_binded) {
         process();
         return true;
